@@ -72,8 +72,8 @@ class Item:
     def __init__(self,type,cost,):
         pass
 
-
-
+#================================================= classa Player, fajnie, ale trzeba dodać funkcje del (gdy stracimy wszystkie punkty życia), tak zwany dekonstruktor, i inne ale to potem 
+ 
 class Player:
 
     def __init__(self,name,strenght,magickpower,gold,health,fate,special_abilities):
