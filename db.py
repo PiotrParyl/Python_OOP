@@ -33,7 +33,23 @@ class player_info (base):
         self.friends = friends
         self.hp = hp
         self.fate = fate
-        self.abilities = abilities
+        self.abilities = abilities   
+
+class player_item (base):
+
+        __tablename__ = 'Item_table'
+
+        item_id = Column(Integer, primary_key=True)
+        name = Column(String)
+        type = Column(String)
+        price = Column(Integer)
+        firepower = Column(Integer)
+
+        def __init__(self,name,type,price,firepower):
+            self.name = name
+            self.type = type
+            self.price = price
+            self.firepower = firepower
     
 base.metadata.create_all(engine)
 
