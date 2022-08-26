@@ -120,10 +120,10 @@ def edit_player():
             pass
 
 
-def print_Player():
+def item_menu():
     pass
 
-def run_menu():
+def player_menu():
 
     while True:
         print("---Player Infro---")
@@ -139,10 +139,28 @@ def run_menu():
             describle_player()
         if anser == '3':
             edit_player()
+        if anser == "q":
+            break
+
+
+def player_and_item_creator():
+    while True:
+        print("---Player And Item Creator---")
+        print("-Create Player: (1)")
+        print("-Create Item: (2)")
+        print("-Exit: (3)")
+        anser = input("-->")
+
+        if anser == '1':
+            player_menu()
+        if anser == '2':
+            item_menu()
+        if anser == '3':
+            break
 
 
 
 
 
 if __name__=="__main__":
-    run_menu()
+    player_and_item_creator()
