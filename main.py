@@ -121,12 +121,27 @@ def edit_player():
 
 
 def item_menu():
-    pass
+    while True:
+        print("---Item Info---")
+        print("-Create Item: (1)")
+        print("-Describle Item: (2)")
+        print("-Edit Item: (3)")
+        print("-Exit: (q)")
+        anser = input("-->")
+
+        if anser == '1':
+            create_player()
+        if anser == '2':
+            describle_player()
+        if anser == '3':
+            edit_player()
+        if anser == "q":
+            break
 
 def player_menu():
 
     while True:
-        print("---Player Infro---")
+        print("---Player Info---")
         print("-Create Player: (1)")
         print("-Describle Player: (2)")
         print("-Edit Player: (3)")
